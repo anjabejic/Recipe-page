@@ -1,4 +1,4 @@
-    /*   Front-end Style Guide
+/*   Front-end Style Guide
     
     font-family: "Young Serif", serif; 
     font-family: "Outfit", sans-serif;    
@@ -40,161 +40,176 @@ The designs were created to the following widths:
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 400, 600, 700*/
 
+/* Desktop: 1440px */
 
-    /* Desktop: 1440px */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+body {
+  background: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  display: flex;
+  justify-content: center;
+  /* list-style-position: inside; */
+}
 
-    body {
-        background: hsl(30, 54%, 90%);
-        font-family: "Outfit", sans-serif;
-        color: hsl(30, 10%, 34%);
-        display: flex;
-        justify-content: center;
-        /* list-style-position: inside; */
-    }
+p {
+  line-height: 1.8rem;
+}
 
-    p {
-        line-height: 1.8rem;
-    }
+.recipeWrapper {
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .recipeWrapper {
-        width: 50%;
-        height: 50%;
-        padding: 30px;
-        background: hsl(0, 0%, 100%);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.recipeImage {
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 20px;
+}
 
-    .recipeImage {
-        width: 95%;
-        height: auto;
-        overflow: hidden;
-        margin: 10px 0;
-        border-radius: 20px;
-    }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
+.recipe {
+  width: 95%;
+  margin: 40px 0;
+}
 
-    .recipe {
-        width: 95%;
-        margin: 40px 0;
-    }
+h1 {
+  font-family: "Young Serif", serif;
+  padding-bottom: 10px;
+  color: hsl(24, 5%, 18%);
+}
 
-    h1 {
-        font-family: "Young Serif", serif;
-        padding-bottom: 10px;
-        color: hsl(24, 5%, 18%);
-    }
+.subtitle {
+  font-family: "Young Serif", serif;
+  color: hsl(14, 45%, 36%);
+  padding: 15px 0;
+  margin-top: 30px;
+}
 
-    .subtitle {
-        font-family: "Young Serif", serif;
-        color: hsl(14, 45%, 36%);
-        padding: 15px 0;
-        margin-top: 30px;
-    }
+li {
+  margin-left: 20px;
+}
 
-    li {
-        margin-left: 20px;
-    }
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
 
-    li::marker {
-        color: hsl(14, 45%, 36%);
-        font-weight: bold;
-    }
+li span {
+  position: relative;
+  left: 25px;
+  text-align: left;
+}
 
-    li span {
-        position: relative;
-        left: 25px;
-        text-align: left;
-    }
+/*  ---------------- PREPARATION SECTION ----------------  */
 
+#preparation li::marker {
+  color: hsl(332, 51%, 32%);
+}
 
+#preparation h3 {
+  color: hsl(332, 51%, 32%);
+}
 
-    /*  ---------------- PREPARATION SECTION ----------------  */
+#preparation {
+  background: hsl(330, 100%, 98%);
+  margin: 20px 0;
+  padding: 20px 0 20px 30px;
+  line-height: 1.7rem;
+}
 
-    #preparation li::marker {
-        color: hsl(332, 51%, 32%);
-    }
+#preparation ul {
+  padding-top: 8px;
+}
 
-    #preparation h3 {
-        color: hsl(332, 51%, 32%);
-    }
+#preparation b {
+  padding-left: 20px;
+}
 
-    #preparation {
-        background: hsl(330, 100%, 98%);
-        margin: 20px 0;
-        padding: 20px 0 20px 30px;
-        line-height: 1.7rem;
-    }
+/*  ---------------- INGRIDIENTS SECTION ----------------  */
 
-    #preparation ul {
-        padding-top: 8px;
-    }
+#ingredients li {
+  padding-bottom: 15px;
+}
 
-    #preparation b {
-        padding-left: 20px;
-    }
+/*  ---------------- INSTRUCTIONS SECTION ----------------  */
 
+#instructions ol li {
+  padding-top: 10px;
+}
 
+/*  ---------------- NUTRITIONAL SECTION ----------------  */
+.nutritional {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
 
-    /*  ---------------- INGRIDIENTS SECTION ----------------  */
+.nutritional tbody tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
 
-    #ingredients li {
-        padding-bottom: 15px;
-    }
+.nutritional td {
+  padding: 13px 0;
+}
 
+.values {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
 
-    /*  ---------------- INSTRUCTIONS SECTION ----------------  */
+/* -------------- ATTRIBUTION -------------- */
 
-    #instructions ol li {
-        padding-top: 10px;
-    }
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
 
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
+/* -------------- MOBILE -------------- */
 
-    /*  ---------------- NUTRITIONAL SECTION ----------------  */
-    .nutritional {
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
+@media only screen and (max-width: 375px) {
+  * {
+    background: none;
+  }
 
-    .nutritional tbody tr {
-        border-bottom: 1px solid hsl(30, 18%, 87%);
-    }
+  .recipeWrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 
-    .nutritional td {
-        padding: 13px 0;
-    }
+  .recipeImage {
+    width:100%;
+    position: absolute;
+    border-radius: 0;
+    top: -10px;
+  }
 
-    .values {
-        color: hsl(14, 45%, 36%);
-        font-weight: bold;
-    }
-
-
-
-    /* -------------- ATTRIBUTION -------------- */
-
-    .attribution {
-        display: none;
-        font-size: 11px;
-        text-align: center;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
+  h1 {
+    padding-top: 120px;
+  }
+}
