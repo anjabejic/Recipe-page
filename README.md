@@ -10,6 +10,8 @@
 
 ### Screenshot
 
+Designs we are given as guides. 
+
 ![Desktop View](/design/desktop-design.jpg) 
 ![Mobile View](/design/mobile-design.jpg) 
 
