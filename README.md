@@ -1,5 +1,5 @@
 # RECIPE PAGE 
-2nd Challenge Project for Codecademy Front-end Path
+2nd Challenge Project from Frontend Mentor
 
 ## Table of contents
 
